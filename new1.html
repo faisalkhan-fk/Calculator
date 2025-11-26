@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        function addNumbers() {
+            let a = Number(document.getElementById("firstname").value);
+            let b = Number(document.getElementById("lastname").value);
+
+            let sum = a + b;
+            document.getElementById("result").innerHTML = "Sum = " + sum;
+        }
+
+        function SubNumbers() {
+            let a = Number(document.getElementById("firstname").value);
+            let b = Number(document.getElementById("lastname").value);
+
+            let sub = a - b;
+            document.getElementById("result1").innerHTML = "Sub = " + sub;
+        }
+        function Divide() {
+            let a = Number(document.getElementById("firstname").value);
+            let b = Number(document.getElementById("lastname").value);
+
+            let div = a/b;
+            document.getElementById("result2").innerHTML = "Division = " + div;
+        }function Multiplication() {
+            let a = Number(document.getElementById("firstname").value);
+            let b = Number(document.getElementById("lastname").value);
+
+            let mul = a*b;
+            document.getElementById("result3").innerHTML = "Multiplication= " + mul;
+        }
+
+    </script>
+</head>
+
+<body style="background-color:blue; color:white; font-size:20px;">
+
+<h2>Calculator</h2>
+
+<label>First Number</label><br>
+<input type="text" id="firstname" value="3"><br><br>
+
+<label>Second Number</label><br>
+<input type="text" id="lastname" value="2"><br><br>
+
+<button type="button" onclick="addNumbers()">Add</button>
+<button type="button" onclick="SubNumbers()">Subtract</button>
+<button type="button" onclick="Divide()">Division</button>
+<button type="button" onclick="Multiplication()">Multiplication</button>
+
+
+<p id="result"></p>
+<p id="result1"></p>
+<p id="result2"></p>
+<p id="result3"></p>
+
+
+</body>
+</html>
